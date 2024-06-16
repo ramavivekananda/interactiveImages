@@ -1,0 +1,10 @@
+<div class="img-overlay-wrap">
+<div>hai, this is interactive image</div>
+    <img src="assets/car.jpg" alt="Interactive Image">
+    <svg *ngFor="let hotspot of hotspots" viewBox="0 0 250 250">
+      <a [attr.href]="hotspot.link">      
+        <circle cx="hotspot.x" cy="hotspot.y" r="50" fill="transparent"/>     
+      </a>
+    </svg>
+
+  </div>
